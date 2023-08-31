@@ -7,10 +7,10 @@
  * Return: The height of the tree, or 0 if tree is NULL.
  */
 
-size_t binary_tree_balance(const binary_tree_t *tree)
+int binary_tree_balance(const binary_tree_t *tree)
 {
-	size_t left_h = 0;
-	size_t right_h = 0;
+	int left_h = 0;
+	int right_h = 0;
 
 	if (!tree)
 		return (0);
